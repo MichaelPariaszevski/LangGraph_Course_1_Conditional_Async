@@ -17,6 +17,8 @@ class ReturnNodeValue:
         self._value=node_secret # private attribute
     
     def __call__(self, state: State) -> Any: # https://www.geeksforgeeks.org/__call__-in-python/
+        import time
+        time.sleep(1)
         print(f"Adding {self._value} to {state['aggregate']}")
         return {"aggregate": [self._value]}
     
