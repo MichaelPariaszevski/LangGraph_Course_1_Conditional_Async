@@ -91,3 +91,5 @@ if __name__ == "__main__":
 
     # The state after node "a" and just before node "b" and node "c" is, in both instances, ['I am node: a'] incdicating that
     # the node "a" "split" into two and ran node "b" and node "c" asynchronously
+    
+    # To make working with asynchronous nodes easier each node that is executed asynchronously should update/modify a different attribute in the State class
